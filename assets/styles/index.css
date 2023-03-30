@@ -56,7 +56,7 @@ p{
 }
 
 .modal {
-    display: grid;
+   
     position: fixed;
     left: 0;
     top: 0;
@@ -70,6 +70,7 @@ p{
     overflow: auto;
     transition: all 0.3s linear;
     place-content: center;
+    display: none;
   }
   
   .modal-content {
