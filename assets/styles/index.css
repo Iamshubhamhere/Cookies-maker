@@ -229,3 +229,50 @@ h3 {
     border-radius: 50%;
   }
   
+
+  /* Dialog */
+  dialog{
+    margin: auto;
+    width: 370px;
+    padding: 19px 25px 24px 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 0.1);
+    animation: 0.25s linear anim;
+}
+
+@keyframes anim {
+    from {
+     opacity: 0;
+     translate: 0 -8px;
+    }
+    to{
+     opacity: 1;
+     translate: 0 0 ;;
+    }
+    
+}
+
+dialog h2{
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0;
+
+}
+
+dialog p {
+    margin-top: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #000;
+}
+dialog p span {
+   
+    color:#833cff;
+    cursor: pointer;
+}
+
+dialog::backdrop{
+    background-color: rgb(13 16 19 / 0.3);
+    backdrop-filter: blur(10px);
+}
